@@ -31,6 +31,7 @@ function viewCart() {
         sentence = sentence + `${cart[i].itemName} at $${cart[i].itemPrice} `
       } else {
       sentence = sentence + `${cart[i].itemName} at $${cart[i].itemPrice}, `
+      }
     } 
     sentence = sentence + `and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
     return sentence
