@@ -48,7 +48,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var removeIndex = cart.indexOf(item)
+  var removeIndex = cart.itemName.indexOf(item)
   if (removeIndex==-1) {
     return `That item is not in your cart.`
   } else {
