@@ -48,7 +48,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  removeIndex = cart.indexOf
+  var removeIndex = cart.indexOf(item)
+  if (removeIndex==-1) {
+    return `That item is not in your cart.`
+  }
+  
 }
 
 function placeOrder(cardNumber) {
