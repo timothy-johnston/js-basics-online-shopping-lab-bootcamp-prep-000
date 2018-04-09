@@ -18,7 +18,13 @@ var newItem = { itemName:item, itemPrice: Math.floor(Math.random()*100+1) }
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length == 0) {
+    return 'Your shopping cart is empty.'
+  } else if (cart.length == 1) {
+    return `In your cart, you have $[c]
+  }
+    
+  }
 }
 
 function total() {
