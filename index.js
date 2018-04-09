@@ -48,7 +48,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  removeIndex = cart
+  removeIndex = cart.indexOf
 }
 
 function placeOrder(cardNumber) {
