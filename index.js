@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- 
+ cart = [{ itemName:item, itemPrice: 17 }]
  
  return `${cart.itemName} has been added to your cart.`
 }
