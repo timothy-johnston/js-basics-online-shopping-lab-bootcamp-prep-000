@@ -23,7 +23,12 @@ function viewCart() {
   } else if (cart.length == 1) {
     return `In your cart, you have ${cart[1].itemName} at $${cart[1].itemprice}.`
   } else if (cart.length == 2) {
-    return ''
+    return `In your cart, you have ${cart[1].itemName} at $${cart[1].itemprice} and ${cart[2].itemName} at $${cart[2].itemprice}.`
+  } else if (cart.length > 2) {
+    var sentence = `In your cart, you have`
+    for (i=0, i<cart.length-1, i++) {
+      sentence = sentence + `, and ${cart[i].itemName} at 
+    }
   }
     
   }
