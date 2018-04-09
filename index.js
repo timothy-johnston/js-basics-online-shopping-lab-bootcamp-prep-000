@@ -50,10 +50,11 @@ function total() {
 function removeFromCart(item) {
   for (var i = 0; i < cart.length-1; i++) {
     if (cart[i].itemName == item) {
-      return cart.itemName.splice(i,1)
+      cart = cart.itemName.splice(i,1);
+      return cart;
     }
   }
-  return "That item is not in your cart."
+  return "That item is not in your cart.";
 }
 
 function placeOrder(cardNumber) {
