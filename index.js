@@ -18,7 +18,7 @@ var newItem = { itemName:item, itemPrice: Math.floor(Math.random()*100+1) }
 }
 
 function viewCart() {
-  if (cart.length == 0) {
+  if (cart.length === 0) {
     return 'Your shopping cart is empty.'
   } else if (cart.length == 1) {
     return `In your cart, you have ${cart[1].itemName} at $${cart[1].itemprice}.`
@@ -26,14 +26,13 @@ function viewCart() {
     return `In your cart, you have ${cart[1].itemName} at $${cart[1].itemprice} and ${cart[2].itemName} at $${cart[2].itemprice}.`
   } else if (cart.length > 2) {
     var sentence = `In your cart, you have`
-    for (i=0, i<cart.length-1, i++) {
+    for (i=0; i<cart.length-1; i++) {
       sentence = sentence + `, ${cart[i].itemName} at ${cart[i].itemPrice}`
     } 
     sentence = sentence + `, and ${cart[cart.length-1].itemName} at ${cart[cart.length-1].itemPrice}.`
     return sentence
   }
     
-  }
 }
 
 function total() {
